@@ -1,0 +1,325 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: "Work Sans";
+}
+html , body{
+    height: 100%;
+    width : 100%;
+}
+
+.main{
+    height : 100%;
+    width : 100%;
+    display: flex;
+    align-items: flex-end;
+    /* justify-content: ; */
+    padding : 0px 70px;
+    padding-top: 110px;
+    gap : 80px;
+}
+
+.left{
+    height: 100%;
+    width : 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    /* background-color: red; */
+}
+
+    .left h1{
+        font-size: 8vw;
+        line-height: 8vw;
+        font-weight: 500;
+        letter-spacing: -.5vw;
+        color : #333;
+    }
+
+    .bottom-left{
+
+        width: 100%;
+        /* background-color: yellow; */
+    }
+
+    .colors{
+        /* background-color: blue ; */
+        width : fit-content;
+        padding : 4.5px 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border: 1.33px solid black;
+    }
+    .colors h5{
+        font-size: 9px;
+        margin-right: 12px;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+    }
+    .color1{
+        height : 10px;
+        width : 10px;
+        border-radius: 50%;
+        background-color: burlywood;
+        margin-right: 4px;
+    }
+    .color2{
+        height : 10px;
+        width : 10px;
+        border-radius: 50%;
+        background-color: brown;
+    }
+
+    .bottom-left h2{
+        margin-top: 32px;
+        margin-bottom: 7px;
+        letter-spacing: -1px;
+        /* font-size: 16px; */
+        font-size : 1.5vw;
+    }
+
+    .bottom-left p{
+        /* font-size: 14px; */
+        font-size: 1vw;
+        text-align: left;
+        /* line-height: 21.5px; */
+        line-height: 1.7vw;
+        letter-spacing: -1px;
+        width : 55%;
+        font-weight: 600;
+        color : #444;
+    }
+
+.right{
+    height: 87%;
+    width : 27%;
+    /* background-color: blue; */
+    position : relative;
+
+}
+    .right-top{
+        height : 50px;
+        width : 100%;
+        /* background-color: red; */
+        display : flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .right-top h5{
+        font-size: 11px;
+        padding-right: 10px;
+        letter-spacing: -0.7px;
+    }
+    .right-top i{
+        font-size: 10px;
+        letter-spacing: -1.5px ;
+    }
+
+    .right img{
+        width : 100%;
+        height : 87%;
+        object-fit: cover;
+    }
+
+    .black-circle{
+        position : absolute;
+        height : 113px;
+        width : 113px;
+        background-color: rgb(3, 3, 7);
+        color : #cbc2c2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        right : -18%;
+        top : 35%;
+    }
+
+    .black-circle h5{
+        font-size: 16px;
+        font-weight: lighter;
+        letter-spacing: -1px;
+
+    }
+
+    .rotated{
+        font-size: 20px;
+        position: absolute;
+        left : -15%;
+        /* background-color: red; */
+        bottom: 2%;
+        rotate : -90deg;
+        transform-origin : 0 0;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+
+    }
+
+
+@media (max-width:600px){
+    .main{
+        height : 100%;
+        width : 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding : 30px;
+        padding-top: 30px;
+        gap : 12.5px;
+    }
+
+    .left{
+        height: fit-content;
+        width : 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        gap : 30px;
+        /* background-color: red; */
+    }
+    
+        .left h1{
+            font-size: 17vw;
+            line-height: 15vw;
+            font-weight: 500;
+            letter-spacing: -.9vw;
+            color : #333;
+        }
+    
+        .bottom-left{
+    
+            width: 100%;
+            /* background-color: yellow; */
+        }
+    
+        .colors{
+            /* background-color: blue ; */
+            width : fit-content;
+            padding : 3.5px 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            border: 1.33px solid black;
+        }
+        .colors h5{
+            font-size: 7px;
+            margin-right: 6px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+        .color1{
+            height : 7px;
+            width : 7px;
+            border-radius: 50%;
+            background-color: burlywood;
+            margin-right: 4px;
+        }
+        .color2{
+            height : 7px;
+            width : 7px;
+            border-radius: 50%;
+            background-color: brown;
+        }
+    
+        .bottom-left h2{
+            margin-top: 16px;
+            margin-bottom: 2px;
+            letter-spacing: -0.1vw;
+            /* font-size: 16px; */
+            font-size : 2.5vw;
+        }
+    
+        .bottom-left p{
+            /* font-size: 14px; */
+            font-size: 2.5vw;
+            text-align: left;
+            /* line-height: 21.5px; */
+            line-height: 3.5vw;
+            letter-spacing: -0.1vw;
+            width : 85%;
+            font-weight: 600;
+            color : #444;
+        }
+
+        .right{
+            height: 50%;
+            width : 100%;
+            /* background-color: rgb(149, 149, 225); */
+            position : relative;
+            display: flex;
+            flex-direction: column-reverse;
+        
+        }
+            .right-top{
+                height : 30px;
+                width : 100%;
+                /* background-color: red; */
+                display : flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        
+            .right-top h5{
+                font-size: 11px;
+                padding-right: 10px;
+                letter-spacing: -0.7px;
+            }
+            .right-top i{
+                font-size: 10px;
+                letter-spacing: -1.5px ;
+            }
+        
+            .right img{
+                width : 100%;
+                height : 87%;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        
+            .black-circle{
+                position : absolute;
+                height : 73px;
+                width : 73px;
+                background-color: rgb(3, 3, 7);
+                color : #cbc2c2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                right : -12%;
+                top : -14%;
+            }
+        
+            .black-circle h5{
+                font-size: 12px;
+                font-weight: lighter;
+                letter-spacing: -1px;
+        
+            }
+        
+            .rotated{
+                font-size: 17px;
+                position: absolute;
+                left : 0%;
+                /* background-color: red; */
+                top: -11%;
+                rotate : 0deg;
+                transform-origin : 0 0;
+                font-weight: 600;
+                letter-spacing: -0.5px;
+        
+            }
+        
+        
+    
+    
+}
+
